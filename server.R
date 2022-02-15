@@ -5,8 +5,11 @@ function(input, output, session) {
     links <-
       df %>%
       filter(Nama %in% input$name,
-             Bahasa %in% input$tools) %>% 
+             Bahasa %in% input$tools,
+             Expertise_In_Algortima_Specialization %in% input$specialization,
+             Expertise_In_Algortima_Mastery %in% input$matery) %>% 
       select(-Active) %>% 
+      select(Nama, Bahasa,everything()) %>% 
       mutate(row = row_number()) %>%
       mutate(traveler = .[[1]],
              traveler2 = .[[2]],
@@ -36,7 +39,7 @@ function(input, output, session) {
       Target = 'target',
       Value = 'count',
       NodeID = 'name',
-      fontSize = 12
+      fontSize = 16
     )
     
     # add origin back into the links data because sankeyNetwork strips it out

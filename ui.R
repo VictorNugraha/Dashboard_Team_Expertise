@@ -34,7 +34,7 @@ fluidPage(
             fluidRow(
                 
                 box(
-                    width = 4,
+                    width = 3,
                     pickerInput(
                         inputId = "name",
                         label = "Name",
@@ -47,11 +47,11 @@ fluidPage(
                         options = list("actions-box" = TRUE,
                                        "selected-text-format" = "count"),
                         inline = TRUE,
-                        width = "540px")
+                        width = "390px")
                 ),
                 
                 box(
-                    width = 4,
+                    width = 3,
                     pickerInput(
                         inputId = "tools",
                         label = "Tools",
@@ -63,21 +63,40 @@ fluidPage(
                         options = list("actions-box" = TRUE,
                                        "selected-text-format" = "count"),
                         inline = TRUE,
-                        width = "540px")
+                        width = "390px")
                 ),
                 
                 box(
-                    width = 4,
+                    width = 3,
                     pickerInput(
-                        inputId = "topic",
-                        label = "Topic",
-                        choices = unique(df$sub_sub_spec),
-                        selected = unique(df$sub_sub_spec),
+                        inputId = "specialization",
+                        label = "Specialization",
+                        choices = list("Specialization" = c("Data Analytics Specialization", "Data Visualization Specialization", "Machine Learning Specialization", "Other")),
+                        selected = c("Data Analytics Specialization", "Data Visualization Specialization", "Machine Learning Specialization", "Other"),
                         multiple = TRUE,
                         options = list("actions-box" = TRUE,
                                        "selected-text-format" = "count"),
                         inline = TRUE,
-                        width = "540px")
+                        width = "390px")
+                ),
+                
+                box(
+                    width = 3,
+                    pickerInput(
+                        inputId = "matery",
+                        label = "Course",
+                        choices = list(
+                            "Data Analytics Specialization" = c("P4DA", "Exploratory Data Analysis", "Data Wrangling & Visualization", "SQL Query"),
+                            "Data Visualization Specialization" = c("P4DS", "Practical Statistics", "Data Visualization", "Interactive Plotting"),
+                            "Machine Learning Specialization" = c("Regression Model", "Classification", "Unsupervised Learning", "Time Series", "Neural Network"),
+                            "Other" = c("API", "Cloud Platform", "Dashboard", "Survival Analysis", "Web Scraping")
+                        ),
+                        selected = c("P4DA", "Exploratory Data Analysis", "Data Wrangling & Visualization", "SQL Query", "P4DS", "Practical Statistics", "Data Visualization", "Interactive Plotting", "Regression Model", "Classification", "Unsupervised Learning", "Time Series", "Neural Network"),
+                        multiple = TRUE,
+                        options = list("actions-box" = TRUE,
+                                       "selected-text-format" = "count"),
+                        inline = TRUE,
+                        width = "390px")
                 ),
                 
                 column(

@@ -35,4 +35,4 @@ df <- df %>%
   mutate_if(is.character, as.factor) %>% 
   mutate(Active = as.factor(Active)) %>% 
   filter(Active == 1) %>% 
-  select(Nama, Bahasa, everything())
+  select(Nama, Bahasa,Expertise_In_Algortima_Specialization,everything())
