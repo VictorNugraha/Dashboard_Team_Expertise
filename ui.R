@@ -3,7 +3,6 @@ fluidPage(
     div(style = "padding: 1px 0px; width: '100%'",
         titlePanel(title="", windowTitle="")),
     
-    introjsUI(),
     useShinyjs(),
     
     navbarPage(
@@ -27,8 +26,7 @@ fluidPage(
         tabPanel(
             title = "",
             fluidRow(
-                
-                
+
                 column(width = 12,
                 
                 br(),
