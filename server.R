@@ -12,11 +12,9 @@ function(input, output, session) {
     output$picker_input <- renderUI({
       
       fluidRow(
-        # 
-        # column(width = 1),
         
         box(
-          width = 2,
+          width = 3,
           pickerInput(
             inputId = "name",
             label = HTML(paste("<b>Name</b>")),
@@ -33,7 +31,7 @@ function(input, output, session) {
         ),
         
         box(
-          width = 2,
+          width = 3,
           pickerInput(
             inputId = "tools",
             label = HTML(paste("<b>Tools</b>")),
@@ -50,7 +48,7 @@ function(input, output, session) {
         ),
         
         box(
-          width = 2,
+          width = 3,
           pickerInput(
             inputId = "specialization",
             label = HTML(paste("<b>Specialization</b>")),
@@ -64,7 +62,7 @@ function(input, output, session) {
         ),
         
         box(
-          width = 2,
+          width = 3,
           pickerInput(
             inputId = "matery",
             label = HTML(paste("<b>Course</b>")),
@@ -80,23 +78,7 @@ function(input, output, session) {
                            "selected-text-format" = "count"),
             inline = TRUE,
             width = "390px")
-        ),
-        
-        box(
-          width = 2,
-          pickerInput(
-            inputId = "expertise",
-            label = HTML(paste("<b>Expertise</b>")),
-            choices = list("Expertise" = c("AdaBoost", "Altair", "ARIMAX", "Arsenic", "Association Rule Maining", "Association Rule", "Beautiful Soup 4", "Choropleth", "CNN", "Dash", "DBSCAN", "echarts4r", "fast.ai", "Flask", "forecastML", "Fuzzy C-Means", "GCP", "ggplot", "Gower Distance"," Graph Mining", "GRU", "Hierarchical Clustering", "highcharter", "httr", "Image Processing", "Keras", "LIME", "LSTM", "matplotlib", "MDP", "MySQL", "PAM", "Panel Regression", "Plotly", "PostgreSQL", "Prophet", "PySurvival", "PyTorch", "randomForestSRC", "Scikit-Learn", "seaborn", "Selenium", "Self Organizing Map", "SHAP", "Shiny", "statsmodel", "Streamlit", "survxai", 'TensorBoard', "TensorFlow", "Tidymodels", "Tidytext", "TS Regressor", "TweetPy", "UBCF", "Word2Vec", "XGBoost"),
-            selected = c("AdaBoost", "Altair", "ARIMAX", "Arsenic", "Association Rule Maining", "Association Rule", "Beautiful Soup 4", "Choropleth", "CNN", "Dash", "DBSCAN", "echarts4r", "fast.ai", "Flask", "forecastML", "Fuzzy C-Means", "GCP", "ggplot", "Gower Distance"," Graph Mining", "GRU", "Hierarchical Clustering", "highcharter", "httr", "Image Processing", "Keras", "LIME", "LSTM", "matplotlib", "MDP", "MySQL", "PAM", "Panel Regression", "Plotly", "PostgreSQL", "Prophet", "PySurvival", "PyTorch", "randomForestSRC", "Scikit-Learn", "seaborn", "Selenium", "Self Organizing Map", "SHAP", "Shiny", "statsmodel", "Streamlit", "survxai", 'TensorBoard', "TensorFlow", "Tidymodels", "Tidytext", "TS Regressor", "TweetPy", "UBCF", "Word2Vec", "XGBoost"),
-            multiple = TRUE,
-            options = list("actions-box" = TRUE,
-                           "selected-text-format" = "count"),
-            inline = TRUE,
-            width = "390px")
-          )
-      )
-      
+        )
       )  
     })
     
