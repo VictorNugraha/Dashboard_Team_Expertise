@@ -15,19 +15,17 @@ function(input, output, session) {
         
         box(
           width = 3,
+          tags$head(tags$script(picker_in)),
           pickerInput(
             inputId = "name",
             label = HTML(paste("<b>Name</b>")),
-            choices = list(
-              "Team A" = c("Cut","Fafil", "Ina", "Tria", "Yosia", "Victor"),
-              "Team B" = c("Dwi", "Kevin", "Lita", "Nabiilah", "Risman", "Wulan"),
-              "Veteran" = c("Ajeng", "David", "Handoyo", "Tomy")),
+            choices = name_choice,
             selected = unique(df$Nama),
             multiple = TRUE,
             options = list("actions-box" = TRUE,
                            "selected-text-format" = "count"),
             inline = TRUE,
-            width = "390px")
+            width = "270px")
         ),
         
         box(
@@ -36,15 +34,15 @@ function(input, output, session) {
             inputId = "tools",
             label = HTML(paste("<b>Tools</b>")),
             choices = list(
-              "Main Tools" = c("Python", "R", "SQL"),
-              "Other" = c("CSS", "MongoDB", "Spark", "Tableau", "Postman")
+              "Main Tools" = main_tools,
+              "Other" =  setdiff(all_tools, main_tools)
             ),
             selected = c("Python", "R", "SQL"),
             multiple = TRUE,
             options = list("actions-box" = TRUE,
                            "selected-text-format" = "count"),
             inline = TRUE,
-            width = "390px")
+            width = "270px")
         ),
         
         box(
@@ -58,7 +56,7 @@ function(input, output, session) {
             options = list("actions-box" = TRUE,
                            "selected-text-format" = "count"),
             inline = TRUE,
-            width = "390px")
+            width = "270px")
         ),
         
         box(
@@ -70,14 +68,14 @@ function(input, output, session) {
               "Data Analytics Specialization" = c("P4DA", "Exploratory Data Analysis", "Data Wrangling & Visualization", "SQL Query"),
               "Data Visualization Specialization" = c("P4DS", "Practical Statistics", "Data Visualization", "Interactive Plotting"),
               "Machine Learning Specialization" = c("Regression Model", "Classification", "Unsupervised Learning", "Time Series", "Neural Network"),
-              "Other" = c("API", "Cloud Platform", "Dashboard", "Survival Analysis", "Web Scraping")
+              "Other" = c("API", "Cloud Platform", "Dashboard", "Survival Analysis", "Web Scraping", "Other")
             ),
             selected = c("P4DA", "Exploratory Data Analysis", "Data Wrangling & Visualization", "SQL Query", "P4DS", "Practical Statistics", "Data Visualization", "Interactive Plotting", "Regression Model", "Classification", "Unsupervised Learning", "Time Series", "Neural Network"),
             multiple = TRUE,
             options = list("actions-box" = TRUE,
                            "selected-text-format" = "count"),
             inline = TRUE,
-            width = "390px")
+            width = "270px")
         )
       )  
     })
@@ -91,8 +89,8 @@ function(input, output, session) {
       select(-Active) %>% 
       filter(Nama %in% input$name,
              Bahasa %in% input$tools,
-             Expertise.In.Algortima.Specialization %in% input$specialization, 
-             Expertise.In.Algortima.Mastery %in% input$matery
+             Expertise.In.Algortima.Specialization %in% c(input$specialization, NA), 
+             Expertise.In.Algortima.Mastery %in% c(input$matery, NA)
       ) %>% 
       mutate(row = row_number()) %>%
       mutate(traveler = .[[1]],
@@ -125,7 +123,8 @@ function(input, output, session) {
       Target = 'target',
       Value = 'count',
       NodeID = 'name',
-      fontSize = 12
+      fontSize = 12,
+      sinksRight = FALSE
     )
     
     # add origin back into the links data because sankeyNetwork strips it out
@@ -184,7 +183,6 @@ function(input, output, session) {
                   nodes.on("click", function(d) {
                       Shiny.onInputChange("clicked_node", d.name);
                   });
-      
     }
     '
     )
@@ -205,19 +203,17 @@ function(input, output, session) {
         
         box(
           width = 4,
+          tags$head(tags$script(picker_in)),
           pickerInput(
             inputId = "name",
             label = HTML(paste("<b>Name</b>")),
-            choices = list(
-              "Team A" = c("Cut","Fafil", "Ina", "Tria", "Yosia", "Victor"),
-              "Team B" = c("Dwi", "Kevin", "Lita", "Nabiilah", "Risman", "Wulan"),
-              "Veteran" = c("Ajeng", "David", "Handoyo", "Tomy")),
+            choices = name_choice,
             selected = unique(df$Nama),
             multiple = TRUE,
             options = list("actions-box" = TRUE,
                            "selected-text-format" = "count"),
             inline = TRUE,
-            width = "540px")
+            width = "370px")
         ),
         
         box(
@@ -231,7 +227,7 @@ function(input, output, session) {
             options = list("actions-box" = TRUE,
                            "selected-text-format" = "count"),
             inline = TRUE,
-            width = "540px")
+            width = "370px")
         ),
         
         box(
@@ -249,7 +245,7 @@ function(input, output, session) {
             options = list("actions-box" = TRUE,
                            "selected-text-format" = "count"),
             inline = TRUE,
-            width = "540px")
+            width = "370px")
         )
         
       )
@@ -353,6 +349,12 @@ function(input, output, session) {
     }
     '
     )
+  })
+  
+  observeEvent(input$group_select, {
+    req(input$group_select)
+    updatePickerInput(session, "name", 
+                      selected = name_choice[[input$group_select]])
   })
   
 }

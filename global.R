@@ -38,6 +38,7 @@ df2 <- read.csv("data/Algoritma Team Expertise - Capstone.csv")
 df <- df %>% 
   mutate_if(is.character, as.factor) %>% 
   mutate(Active = as.factor(Active)) %>% 
+  mutate_all(list(~na_if(.,""))) %>% 
   filter(Active == 1) %>% 
   select(Nama, Bahasa,Expertise.In.Algortima.Specialization,everything())
 
@@ -48,6 +49,45 @@ df2 <- df2 %>%
   mutate(Active = as.factor(Active)) %>% 
     filter(Active == 1) 
 
+#------------------------------ADDITIONAL---------------------------------
+
+## Tools Choice For Picker Input
+
+all_tools <- unique(df$Bahasa)
+main_tools <- c("Python", "R", "SQL")
+
+## Name Choice For Picker Input
+
+name_choice <- list("Team A" = c("Cut","Fafil", "Ina", "Tria", "Yosia", "Victor"),
+                    "Team B" = c("Dwi", "Kevin", "Lita", "Nabiilah", "Risman", "Wulan"),
+                    "Veteran" = c("Ajeng", "David", "Handoyo", "Tomy"))
+
+## To Select An Entire Group For Picker Input Choices
+
+picker_in <- HTML("
+$(function() {
+  let observer = new MutationObserver(callback);
+
+  function clickHandler(evt) {
+    Shiny.setInputValue('group_select', $(this).children('span').text());
+  }
+
+  function callback(mutations) {
+    for (let mutation of mutations) {
+      if (mutation.type === 'childList') {
+        $('.dropdown-header').on('click', clickHandler).css('cursor', 'pointer');
+        
+      }
+    }
+  }
+
+  let options = {
+    childList: true,
+  };
+
+  observer.observe($('.inner')[0], options);
+})
+")
 
 
 

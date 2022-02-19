@@ -7,7 +7,6 @@ fluidPage(
     
     navbarPage(
         
-        #Title---
         title = div(img(src="logo.png", 
                         height = '45px', 
                         width = '150px'), 
@@ -22,7 +21,6 @@ fluidPage(
         id = "inTabset",
         header = tagList(useShinydashboard()),
         
-        #Menu home screen---
         tabPanel(
             title = "",
             fluidRow(
@@ -34,14 +32,14 @@ fluidPage(
                 actionButton(inputId = "skill",
                             label = strong("SKILL"),
                             style = "color: white;
-                                    font-size : 125%;
+                                    font-size : 100%;
                                     background-color: black;
                                     border-color: black"), 
                 
                 actionButton(inputId = "capstone",
                              label = strong("CAPSTONE"),
                              style = "color: white;
-                                    font-size : 125%;
+                                    font-size : 100%;
                                     background-color: black;
                                     border-color: black"),
                 
