@@ -303,6 +303,7 @@ function(input, output, session) {
       '
     function(el, x) {
     
+      var nodes_name = d3.selectAll(".node text");
       var nodes = d3.selectAll(".node");
       var links = d3.selectAll(".link");
                       var default_opacity = 0.15; 
@@ -312,7 +313,7 @@ function(input, output, session) {
                   nodes.select("rect").style("cursor", "pointer");
                   
                   // link color
-                  links.style("stroke", "grey");
+                  links.style("stroke", "gray");
                   
                   // text color
                   nodes.select("text").style("fill", "black");
@@ -354,7 +355,7 @@ function(input, output, session) {
   observeEvent(input$group_select, {
     req(input$group_select)
     updatePickerInput(session, "name", 
-                      selected = name_choice[[input$group_select]])
+                        selected = name_choice[[input$group_select]])
   })
   
 }
