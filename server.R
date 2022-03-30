@@ -89,8 +89,8 @@ function(input, output, session) {
       select(-Active) %>% 
       filter(Nama %in% input$name,
              Bahasa %in% input$tools,
-             Expertise.In.Algortima.Specialization %in% c(input$specialization, NA), 
-             Expertise.In.Algortima.Mastery %in% c(input$matery, NA)
+             `Expertise In Algortima Specialization` %in% c(input$specialization, NA), 
+             `Expertise In Algortima Mastery` %in% c(input$matery, NA)
       ) %>% 
       mutate(row = row_number()) %>%
       mutate(traveler = .[[1]],
@@ -260,8 +260,8 @@ function(input, output, session) {
       df2 %>%
       select(-Active) %>% 
       filter(Nama %in% input$name,
-             Capstone.Specialization %in% input$specialization,
-             Capstone.Topic %in% input$matery) %>% 
+             `Capstone Specialization` %in% input$specialization,
+             `Capstone Topic` %in% input$matery) %>% 
       mutate(row = row_number()) %>%
       mutate(traveler = .[[1]],
              traveler2 = .[[2]],

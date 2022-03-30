@@ -1,0 +1,195 @@
+Nama,Active,Bahasa,Expertise In Algortima Specialization,Expertise In Algortima Mastery,Individual Expertise
+Ajeng,1,R,Data Visualization Specialization,P4DS,
+Ajeng,1,R,Data Visualization Specialization,Practical Statistic,
+Ajeng,1,R,Data Visualization Specialization,Data Visualization,
+Ajeng,1,R,Data Visualization Specialization,Interactive Plotting,Shiny 
+Ajeng,1,R,Data Visualization Specialization,Interactive Plotting,Plotly
+Ajeng,1,R,Machine Learning Specialization,Regression Model,XGBoost
+Ajeng,1,R,Machine Learning Specialization,Regression Model,AdaBoost
+Ajeng,1,R,Machine Learning Specialization,Regression Model,Panel Regression
+Ajeng,1,R,Machine Learning Specialization,Classification,XGBoost
+Ajeng,1,R,Machine Learning Specialization,Classification,AdaBoost
+Ajeng,1,R,Machine Learning Specialization,Unsupervised Learning,
+Ajeng,1,R,Machine Learning Specialization,Time Series,forecastML
+Ajeng,1,R,Machine Learning Specialization,Time Series,TS Regressor
+Ajeng,1,R,Machine Learning Specialization,Neural Network,Keras
+Ajeng,1,R,Machine Learning Specialization,Reinforcement Learning,MDP
+Ajeng,1,Python,Machine Learning Specialization,Neural Network,CNN
+Ajeng,1,Python,Machine Learning Specialization,Classification,XGBoost
+Ajeng,1,Python,Machine Learning Specialization,Classification,AdaBoost
+David,1,R,Data Visualization Specialization,P4DS,
+David,1,R,Data Visualization Specialization,Practical Statistic,
+David,1,R,Data Visualization Specialization,Data Visualization,
+David,1,R,Data Visualization Specialization,Interactive Plotting,Shiny 
+David,1,R,Data Visualization Specialization,Interactive Plotting,Plotly
+David,1,R,Machine Learning Specialization,Regression Model,
+David,1,R,Machine Learning Specialization,Classification,
+David,1,R,Machine Learning Specialization,Unsupervised Learning,DBSCAN
+David,1,R,Machine Learning Specialization,Unsupervised Learning,Association Rule Maining
+David,1,R,Machine Learning Specialization,Time Series,
+David,1,R,Machine Learning Specialization,Neural Network,Keras
+David,1,R,Machine Learning Specialization,Other,Tidymodels
+David,1,R,Machine Learning Specialization,Other,Tidytext
+David,1,R,Machine Learning Specialization,Other,Graph Mining
+David,1,R,Other,API,httr
+David,1,Postman,,,
+Dwi,1,Python,Data Analytics Specialization,P4DA,
+Dwi,1,Python,Data Analytics Specialization,Exploratory Data Analysis,
+Dwi,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,Plotly
+Dwi,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,seaborn
+Dwi,1,Python,Machine Learning Specialization,Other,Scikit-Learn
+Dwi,1,Python,Machine Learning Specialization,Neural Network,Keras
+Dwi,1,Python,Machine Learning Specialization,Neural Network,TensorFlow
+Dwi,1,Python,Machine Learning Specialization,Neural Network,TensorBoard
+Dwi,1,Python,Machine Learning Specialization,Neural Network,PyTorch
+Dwi,1,Python,Other,Dashboard,Dash
+Dwi,1,Python,Other,Web Scraping,Beautiful Soup 4
+Dwi,1,Python,Other,Web Scraping,Selenium
+Dwi,1,Python,Other,Web Scraping,Arsenic
+Dwi,1,Python,Other,API,TweetPy
+Dwi,1,Python,Other,Cloud Platform,GCP
+Dwi,1,SQL,Data Analytics Specialization,SQL Query,MySQL
+Dwi,1,R,Data Visualization Specialization,P4DS,
+Dwi,1,R,Machine Learning Specialization,Classification,
+Dwi,1,R,Machine Learning Specialization,Unsupervised Learning,
+Dwi,1,R,Machine Learning Specialization,Neural Network,Keras
+Lita,1,Python,Data Analytics Specialization,P4DA,
+Lita,1,Python,Data Analytics Specialization,Exploratory Data Analysis,
+Lita,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,Plotly
+Lita,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,seaborn
+Lita,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,matplotlib
+Lita,1,Python,Machine Learning Specialization,Other,Scikit-Learn
+Lita,1,Python,Machine Learning Specialization,Other,statsmodels
+Lita,1,Python,Other,Web Scraping,Beautiful Soup 4
+Lita,1,Python,Other,Web Scraping,Selenium
+Lita,1,Python,Other,Dashboard,Dash
+Lita,1,Python,Other,Dashboard,Flask
+Lita,1,Python,Other,Dashboard,Streamlit
+Lita,1,SQL,Data Analytics Specialization,SQL Query,
+Lita,1,R,Data Visualization Specialization,P4DS,
+Lita,1,R,Machine Learning Specialization,Regression Model,
+Lita,1,R,Machine Learning Specialization,Unsupervised Learning,
+Lita,1,Tableau,,,
+Lita,1,SQL,Data Analytics Specialization,SQL Query,MySQL
+Fafil,1,Python,Data Analytics Specialization,P4DA,
+Fafil,1,Python,Data Analytics Specialization,Exploratory Data Analysis,
+Fafil,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,
+Fafil,1,SQL,Data Analytics Specialization,SQL Query,
+Fafil,1,R,Data Visualization Specialization,P4DS,
+Fafil,1,R,Machine Learning Specialization,Regression Model,
+Fafil,1,R,Machine Learning Specialization,Classification,
+Fafil,1,R,Machine Learning Specialization,Unsupervised Learning,
+Wulan,1,Python,Other,Web Scraping,Selenium
+Wulan,1,Python,Machine Learning Specialization,Explainanble AI,LIME
+Wulan,1,Python,Machine Learning Specialization,Other,Scikit-Learn
+Wulan,1,Python,Machine Learning Specialization,Neural Network,Word2Vec
+Wulan,1,Python,Machine Learning Specialization,Neural Network,GRU
+Wulan,1,Python,Machine Learning Specialization,Neural Network,LSTM
+Wulan,1,Python,Machine Learning Specialization,Neural Network,Image Processing
+Wulan,1,Tableau,,,
+Wulan,1,SQL,Data Analytics Specialization,SQL Query,PostgreSQL
+Handoyo,1,Python,Data Analytics Specialization,P4DA,
+Handoyo,1,Python,Data Analytics Specialization,Exploratory Data Analysis,
+Handoyo,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,Plotly
+Handoyo,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,seaborn
+Handoyo,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,Altair
+Handoyo,1,Python,Machine Learning Specialization,Other,Scikit-Learn
+Handoyo,1,Python,Machine Learning Specialization,Time Series,Prophet
+Handoyo,1,Python,Machine Learning Specialization,Neural Network,TensorFlow
+Handoyo,1,Python,Machine Learning Specialization,Neural Network,TensorBoard
+Handoyo,1,Python,Machine Learning Specialization,Neural Network,fast.ai
+Handoyo,1,Python,Other,Dashboard,Dash
+Handoyo,1,SQL,Data Analytics Specialization,SQL Query,MySQL
+Handoyo,1,R,Data Visualization Specialization,P4DS,
+Handoyo,1,R,Data Visualization Specialization,Practical Statistic,
+Handoyo,1,R,Data Visualization Specialization,Interactive Plotting,Shiny 
+Handoyo,1,R,Data Visualization Specialization,Interactive Plotting,Plotly
+Handoyo,1,R,Machine Learning Specialization,Regression Model,
+Handoyo,1,R,Machine Learning Specialization,Classification,
+Handoyo,1,R,Machine Learning Specialization,Unsupervised Learning,
+Handoyo,1,R,Machine Learning Specialization,Time Series,
+Handoyo,1,R,Machine Learning Specialization,Neural Network,Keras
+Handoyo,1,R,Machine Learning Specialization,Other,Tidymodels
+Handoyo,1,Tableau,,,
+Handoyo,1,SQL,Data Analytics Specialization,SQL Query,PostgreSQL
+Handoyo,1,MongoDB,,,
+Handoyo,1,Spark,,,
+Handoyo,1,CSS,,,
+Ina,1,Python,Data Analytics Specialization,P4DA,
+Ina,1,Python,Data Analytics Specialization,Exploratory Data Analysis,
+Ina,1,Python,Machine Learning Specialization,Other,Scikit-Learn
+Ina,1,SQL,Data Analytics Specialization,SQL Query,
+Ina,1,R,Data Visualization Specialization,P4DS,
+Ina,1,R,Data Visualization Specialization,P4DS,
+Ina,1,R,Data Visualization Specialization,Practical Statistic,
+Ina,1,R,Machine Learning Specialization,Regression Model,
+Ina,1,R,Machine Learning Specialization,Classification,
+Ina,1,R,Machine Learning Specialization,Unsupervised Learning,Hierarchical Clustering
+Ina,1,R,Machine Learning Specialization,Unsupervised Learning,Fuzzy C-Means
+Ina,1,R,Machine Learning Specialization,Unsupervised Learning,Association Rules
+Ina,1,R,Machine Learning Specialization,Unsupervised Learning,Self Organizing Map
+Ina,1,R,Machine Learning Specialization,Time Series,
+Ina,1,R,Machine Learning Specialization,Neural Network,Keras
+Kevin,1,Python,Data Analytics Specialization,Exploratory Data Analysis,
+Kevin,1,Python,Data Analytics Specialization,Data Visualisation ,Seaborn
+Kevin,1,Python,Machine Learning Specialization,Other,Scikit-Learn
+Kevin,1,Python,Machine Learning Specialization,Neural Network,PyTorch
+Risman,1,R,Data Visualization Specialization,P4DS,
+Risman,1,R,Machine Learning Specialization,Regression Model,
+Risman,1,R,Machine Learning Specialization,Classification,XGBoost
+Risman,1,R,Machine Learning Specialization,Unsupervised Learning,Hierarchical Clustering
+Risman,1,R,Machine Learning Specialization,Time Series,
+Nabiilah,1,R,Data Visualization Specialization,Practical Statistic,
+Nabiilah,1,R,Data Visualization Specialization,Data Visualization,Choropleth
+Nabiilah,1,R,Data Visualization Specialization,Interactive Plotting,Shiny 
+Nabiilah,1,R,Data Visualization Specialization,Interactive Plotting,Plotly
+Nabiilah,1,R,Machine Learning Specialization,Regression Model,
+Nabiilah,1,R,Machine Learning Specialization,Classification,
+Nabiilah,1,R,Machine Learning Specialization,Unsupervised Learning,Hierarchical Clustering
+Nabiilah,1,R,Machine Learning Specialization,Time Series,
+Nabiilah,1,R,Machine Learning Specialization,Neural Network,Keras
+Tomy,1,Python,Data Analytics Specialization,P4DA,
+Tomy,1,Python,Data Analytics Specialization,Exploratory Data Analysis,
+Tomy,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,
+Tomy,1,Python,Machine Learning Specialization,Other,Scikit-Learn
+Tomy,1,Python,Machine Learning Specialization,Time Series,Prophet
+Tomy,1,Python,Machine Learning Specialization,Neural Network,Word2Vec
+Tomy,1,Python,Machine Learning Specialization,Neural Network,GRU
+Tomy,1,Python,Machine Learning Specialization,Neural Network,LSTM
+Tomy,1,Python,Machine Learning Specialization,Explainanble AI,SHAP
+Tomy,1,Python,Other,Survival Analysis,PySurvival
+Tomy,1,Python,Other,Web Scraping,Selenium
+Tomy,1,SQL,Data Analytics Specialization,SQL Query,
+Tomy,1,R,Data Visualization Specialization,P4DS,
+Tomy,1,R,Data Visualization Specialization,Practical Statistic,
+Tomy,1,R,Machine Learning Specialization,Regression Model,
+Tomy,1,R,Machine Learning Specialization,Classification,
+Tomy,1,R,Machine Learning Specialization,Unsupervised Learning,
+Tomy,1,R,Machine Learning Specialization,Time Series,Prophet
+Tomy,1,R,Other,Survival Analysis,randomForestSRC
+Tomy,1,R,Other,Survival Analysis,survxai
+Sitta,1,R,Data Visualization Specialization,P4DS,
+Sitta,1,R,Data Visualization Specialization,Practical Statistic,
+Sitta,1,R,Data Visualization Specialization,Data Visualization,echarts4r
+Sitta,1,R,Data Visualization Specialization,Data Visualization,highcharter
+Sitta,1,R,Data Visualization Specialization,Interactive Plotting,Shiny 
+Sitta,1,R,Data Visualization Specialization,Interactive Plotting,Plotly
+Sitta,1,R,Machine Learning Specialization,Regression Model,
+Sitta,1,R,Machine Learning Specialization,Classification,XGBoost
+Sitta,1,R,Machine Learning Specialization,Unsupervised Learning,UBCF
+Sitta,1,R,Machine Learning Specialization,Time Series,ARIMAX
+Sitta,1,R,Machine Learning Specialization,Time Series,Prophet
+Sitta,1,R,Machine Learning Specialization,Neural Network,Keras
+Yosia,1,Python,Data Analytics Specialization,P4DA,
+Yosia,1,Python,Data Analytics Specialization,Exploratory Data Analysis,
+Yosia,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,Plotly
+Yosia,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,seaborn
+Yosia,1,Python,Data Analytics Specialization,Data Wrangling & Visualization,Altair
+Yosia,1,SQL,Data Analytics Specialization,SQL Query,
+Yosia,1,Python,Other,API,TweetPy
+Yosia,1,Python,Other,Cloud Platform,GCP
+Victor,1,R,Data Visualization Specialization,Data Visualization,
+Victor,1,R,Data Visualization Specialization,Interactive Plotting,Shiny 
+Victor,1,R,Data Visualization Specialization,Interactive Plotting,Plotly
+Victor,1,R,Machine Learning Specialization,Unsupervised Learning,PAM
+Victor,1,R,Machine Learning Specialization,Unsupervised Learning,Gower Distance

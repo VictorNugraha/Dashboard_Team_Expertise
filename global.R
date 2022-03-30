@@ -1,5 +1,8 @@
 #------------------------------LIBRARY-----------------------------------------
 
+## Data
+library(googlesheets4)
+
 ## Shiny
 library(shiny)
 library(shinydashboard)
@@ -25,13 +28,33 @@ library(htmlwidgets)
 
 #------------------------------DATA PREPARATION---------------------------------
 
+## Connect to googlesheet
+
+# Set authentication token to be stored in a folder called `.secrets`
+options(gargle_oauth_cache = ".secrets")
+
+# Authenticate manually
+gs4_auth()
+
+# If successful, the previous step stores a token file.
+# Check that a file has been created with:
+list.files(".secrets/")
+
+# Check that the non-interactive authentication works by first deauthorizing:
+gs4_deauth()
+
+# Authenticate using token. If no browser opens, the authentication works.
+gs4_auth(cache = ".secrets", email = "victor@algorit.ma")
+
 ## Read Data Skill Expertise
 
-df <- read.csv("data/Algoritma Team Expertise - Copy of All 1.csv")
+df <- read_sheet("https://docs.google.com/spreadsheets/d/1KyM2g_9T5Un6u14OZCO4ufHfz8sMz70cauxqKAQviog/edit#gid=2004238697",
+                  sheet = "All")
 
 ## Read Data Capstone Expertise
 
-df2 <- read.csv("data/Algoritma Team Expertise - Capstone.csv")
+df2 <- read_sheet("https://docs.google.com/spreadsheets/d/1KyM2g_9T5Un6u14OZCO4ufHfz8sMz70cauxqKAQviog/edit#gid=2004238697", 
+                   sheet = "Capstone")
 
 ## Data Pre-Process Skill Expertise
 
@@ -40,7 +63,7 @@ df <- df %>%
   mutate(Active = as.factor(Active)) %>% 
   mutate_all(list(~na_if(.,""))) %>% 
   filter(Active == 1) %>% 
-  select(Nama, Bahasa,Expertise.In.Algortima.Specialization,everything())
+  select(Nama, Bahasa,`Expertise In Algortima Specialization`,everything())
 
 ## Data Pre-Process Capstone Expertise
 
@@ -49,7 +72,7 @@ df2 <- df2 %>%
   mutate(Active = as.factor(Active)) %>% 
     filter(Active == 1) 
 
-#------------------------------ADDITIONAL---------------------------------
+#------------------------------PICKER INPUT-------------------------------------
 
 ## Tools Choice For Picker Input
 
@@ -58,9 +81,17 @@ main_tools <- c("Python", "R", "SQL")
 
 ## Name Choice For Picker Input
 
-name_choice <- list("Team A" = c("Cut","Fafil", "Ina", "Tria", "Yosia", "Victor"),
-                    "Team B" = c("Dwi", "Kevin", "Lita", "Nabiilah", "Risman", "Wulan"),
-                    "Veteran" = c("Ajeng", "David", "Handoyo", "Tomy"))
+team_choice <- read_sheet("https://docs.google.com/spreadsheets/d/1KyM2g_9T5Un6u14OZCO4ufHfz8sMz70cauxqKAQviog/edit#gid=2004238697", 
+                          sheet = "ListTeam")
+
+team_choice <- as.list(team_choice)
+
+veteran_choice <- read_sheet("https://docs.google.com/spreadsheets/d/1KyM2g_9T5Un6u14OZCO4ufHfz8sMz70cauxqKAQviog/edit#gid=2004238697", 
+                             sheet = "ListVeteran")
+
+veteran_choice <- as.list(veteran_choice)
+
+name_choice <-  c(team_choice, veteran_choice)
 
 ## To Select An Entire Group For Picker Input Choices
 
